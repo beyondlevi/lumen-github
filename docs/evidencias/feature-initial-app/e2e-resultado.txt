@@ -1,0 +1,22 @@
+pass chromium: setup without settings, then Try again connects
+pass chromium: pull requests: newest first, the first one focused; Enter opens it, Down reads it to the checks, Back returns
+pass chromium: pull request with a failed check and changes requested
+pass chromium: commits: the default branch, newest first; a commit shows its message, checks and files
+pass chromium: repositories: each with its details or why it could not open; Enter shows another one
+pass chromium: a repository without pull requests, and one that does not exist
+pass chromium: a revoked token goes back to Setup with the reason
+pass chromium: rate limit and server errors say so, and Try again recovers
+pass chromium: a token that cannot read check runs still shows commit statuses
+pass chromium: offline package, demo mode from the demo setting, every screen captured
+pass chromium: offline package, demo mode, in Portuguese
+pass firefox: setup without settings, then Try again connects
+pass firefox: pull requests: newest first, the first one focused; Enter opens it, Down reads it to the checks, Back returns
+pass firefox: pull request with a failed check and changes requested
+pass firefox: commits: the default branch, newest first; a commit shows its message, checks and files
+pass firefox: repositories: each with its details or why it could not open; Enter shows another one
+pass firefox: a repository without pull requests, and one that does not exist
+pass firefox: a revoked token goes back to Setup with the reason
+pass firefox: rate limit and server errors say so, and Try again recovers
+pass firefox: a token that cannot read check runs still shows commit statuses
+pass firefox: offline package, demo mode from the demo setting, every screen captured
+pass firefox: offline package, demo mode, in Portuguese

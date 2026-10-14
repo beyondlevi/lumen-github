@@ -1,0 +1,88 @@
+{
+  "repos": [
+    {
+      "full_name": "lumen-labs/hud-kit",
+      "description": "Layout and focus primitives for 600x600 heads-up displays",
+      "default_branch": "main",
+      "private": false,
+      "stars": 1284,
+      "pushed": 18,
+      "commits": [
+        {"id": "c1", "message": "Fix focus ring clipping inside scroll views\n\nThe ring was drawn outside the scroller's padding box and got cut at the\nedges. Draw it inset by 2 px and keep the scroll margin in sync.\n\nFixes #212", "login": "ana-lima", "ago": 18, "ci": "pending",
+         "files": [["src/focus/ring.ts", "modified", 24, 9], ["src/scroll/ScrollView.tsx", "modified", 6, 2], ["tests/focus.test.ts", "modified", 31, 0]]},
+        {"id": "c2", "message": "Merge pull request #214 from lumen-labs/feat/dpad-wrap\n\nWrap D-pad focus at list ends", "login": "rafa-costa", "ago": 95, "ci": "success",
+         "files": [["src/focus/dpad.ts", "modified", 48, 12], ["docs/focus.md", "modified", 14, 1]]},
+        {"id": "c3", "message": "Bump vite from 8.0.0 to 8.0.2", "login": "dependabot[bot]", "ago": 260, "ci": "success",
+         "files": [["package.json", "modified", 1, 1], ["package-lock.json", "modified", 22, 22]]},
+        {"id": "c4", "message": "Add monochrome contrast check to the theme builder", "login": "ana-lima", "ago": 1500, "ci": "failure",
+         "files": [["src/theme/contrast.ts", "added", 87, 0], ["src/theme/builder.ts", "modified", 12, 3], ["tests/contrast.test.ts", "added", 64, 0]]},
+        {"id": "c5", "message": "Docs: explain the additive display and why black is transparent", "login": "joao-pires", "ago": 3100, "ci": "success",
+         "files": [["docs/display.md", "added", 52, 0], ["README.md", "modified", 3, 1]]},
+        {"id": "c6", "message": "Release 2.4.0", "login": "rafa-costa", "ago": 5200, "ci": "success",
+         "files": [["CHANGELOG.md", "modified", 18, 0], ["package.json", "modified", 1, 1]]},
+        {"id": "c7", "message": "Remove the deprecated Pager component", "login": "rafa-costa", "ago": 8700, "ci": "success",
+         "files": [["src/pager/Pager.tsx", "removed", 0, 143], ["src/index.ts", "modified", 0, 2]]}
+      ],
+      "pulls": [
+        {"number": 216, "title": "Read long text with the D-pad, half a screen per swipe", "login": "joao-pires", "state": "open", "draft": false, "head": "feat/detail-scroll", "base": "main", "created": 300, "updated": 12,
+         "body": "## What\n\nDown and Up scroll a long detail view **half a screen** at a time, and only reach the actions below at the end.\n\n## Why\n\nOn the glasses there is no pointer: a long description used to be skipped in one swipe.\n\n- [x] Unit tests\n- [x] Tested on GeckoView\n- [ ] Tested on the system WebView\n\n<!-- template: keep this section -->\nCloses #201",
+         "additions": 212, "deletions": 38, "changed_files": 7, "commits": 4, "comments": 5,
+         "reviews": [["ana-lima", "APPROVED"], ["rafa-costa", "COMMENTED"]],
+         "checks": [["build", "completed", "success"], ["test (firefox)", "completed", "success"], ["test (chromium)", "in_progress", null]], "statuses": []},
+        {"number": 215, "title": "Theme tokens for amber HUDs", "login": "maria-souza", "state": "open", "draft": true, "head": "theme/amber", "base": "main", "created": 1400, "updated": 140,
+         "body": "Work in progress: amber variants of every color token.\n\nStill missing: the focus ring and the shimmer.",
+         "additions": 96, "deletions": 4, "changed_files": 3, "commits": 2, "comments": 0,
+         "reviews": [], "checks": [["build", "completed", "success"]], "statuses": []},
+        {"number": 213, "title": "Monochrome contrast check fails on dimmed text", "login": "ana-lima", "state": "open", "draft": false, "head": "fix/contrast-dimmed", "base": "main", "created": 1450, "updated": 600,
+         "body": "The contrast check added in 2.4 rejects the secondary text color. This lowers the threshold for text marked as secondary and adds a test for it.",
+         "additions": 18, "deletions": 6, "changed_files": 2, "commits": 1, "comments": 3,
+         "reviews": [["joao-pires", "CHANGES_REQUESTED"]],
+         "checks": [["build", "completed", "success"], ["test (firefox)", "completed", "failure"], ["lint", "completed", "success"]], "statuses": [["coverage", "success"]]},
+        {"number": 214, "title": "Wrap D-pad focus at list ends", "login": "rafa-costa", "state": "closed", "merged": true, "head": "feat/dpad-wrap", "base": "main", "created": 2900, "updated": 95,
+         "body": "Down on the last item goes back to the first, as on the system launcher.",
+         "additions": 48, "deletions": 12, "changed_files": 2, "commits": 3, "comments": 2,
+         "reviews": [["ana-lima", "APPROVED"], ["joao-pires", "APPROVED"]],
+         "checks": [["build", "completed", "success"], ["test (firefox)", "completed", "success"]], "statuses": []},
+        {"number": 209, "title": "Experiment: canvas renderer for lists", "login": "joao-pires", "state": "closed", "merged": false, "head": "exp/canvas-lists", "base": "main", "created": 12000, "updated": 4300,
+         "body": "Closing: DOM lists are fast enough on GeckoView 156.",
+         "additions": 530, "deletions": 20, "changed_files": 9, "commits": 6, "comments": 4,
+         "reviews": [["rafa-costa", "COMMENTED"]], "checks": [["build", "completed", "cancelled"]], "statuses": []}
+      ]
+    },
+    {
+      "full_name": "lumen-labs/band-driver",
+      "description": "Neural Band gestures as key events",
+      "default_branch": "main",
+      "private": true,
+      "stars": 87,
+      "pushed": 2000,
+      "commits": [
+        {"id": "b1", "message": "Debounce double index taps under 120 ms", "login": "rafa-costa", "ago": 2000, "ci": "success",
+         "files": [["src/gestures/tap.rs", "modified", 15, 4]]},
+        {"id": "b2", "message": "Log reconnects with the band's battery level", "login": "ana-lima", "ago": 7200, "ci": "success",
+         "files": [["src/link/reconnect.rs", "modified", 9, 1], ["src/link/battery.rs", "added", 40, 0]]},
+        {"id": "b3", "message": "Initial commit", "login": "rafa-costa", "ago": 40000, "ci": null,
+         "files": [["README.md", "added", 12, 0], ["Cargo.toml", "added", 18, 0]]}
+      ],
+      "pulls": [
+        {"number": 12, "title": "Map the middle pinch to Escape", "login": "ana-lima", "state": "open", "draft": false, "head": "feat/middle-pinch", "base": "main", "created": 3000, "updated": 2100,
+         "body": "The middle tap now arrives as Escape, so apps get Back without special code.",
+         "additions": 34, "deletions": 8, "changed_files": 3, "commits": 2, "comments": 1,
+         "reviews": [], "checks": [], "statuses": [["ci/buildkite", "pending"]]}
+      ]
+    },
+    {
+      "full_name": "maria-souza/dotfiles",
+      "description": null,
+      "default_branch": "master",
+      "private": false,
+      "stars": 3,
+      "pushed": 20000,
+      "commits": [
+        {"id": "d1", "message": "zsh: faster prompt in big repositories", "login": "maria-souza", "ago": 20000, "ci": null,
+         "files": [[".zshrc", "modified", 7, 3]]}
+      ],
+      "pulls": []
+    }
+  ]
+}
